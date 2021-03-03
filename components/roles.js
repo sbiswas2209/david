@@ -44,7 +44,7 @@ const Roles = () => {
     return ( 
         <div className='lg:grid grid-cols-2 gap-0 ml-11 lg:mr-44 mr-11'>
             <div>
-                <h1 className='text-4xl transition ease-in duration-700 lg:text-center'>
+                <h1 className='text-4xl transition ease-in duration-700 lg:text-center mt-11'>
                     Roles
                 </h1>
             </div>
