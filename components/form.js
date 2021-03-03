@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/Form.module.css'
 
 export default class Form extends React.Component {
   constructor(props) {
@@ -17,8 +18,12 @@ export default class Form extends React.Component {
         action="https://formspree.io/f/mdopvkey"
         method="POST"
       >
-        <label>Email:</label>
-        <input type="email" name="email" />
+        <div className="relative border rounded mb-4 shadow appearance-none label-floating">
+        <input className="w-full py-2 px-3 text-green-darker leading-normal rounded" id="email" type="text" placeholder="Email" />
+        <label className="absolute block text-green-darker pin-t pin-l w-full px-3 py-2 leading-normal" htmlFor="email">
+          Email
+        </label>
+      </div>
         <label>Message:</label>
         <input type="text" name="message" />
         {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
