@@ -1,5 +1,5 @@
 import Form from "./form";
-import Wave from './wave'
+import Wave from "./wave";
 
 const Intro = () => {
   return (

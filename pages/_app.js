@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Sagnik Biswas</title>
+        
       </Head>
       <Layout className="bg-grey-800">
         <Component {...pageProps} />
