@@ -5,7 +5,9 @@ const Footer = () => {
       <div className='grid grid-cols-2 gap-10 m-11'>
         <div className='grid grid-row-2 gap-4'>
           <h3 className="lg:text-3xl sm:text-base">Developed By</h3>
+          <a href="https://sagnikbiswas.netlify.app" title="Lockdown treated me well💅">
           <p className="lg:text-2xl sm:text-lg">Sagnik Biswas 🤘 2021</p>
+          </a>
         </div>
         <div className='lg:grid grid-cols-3 gap-4 sm:grid grid-rows-3 gap-4'>
             <a href="https://www.linkedin.com/in/sbiswas2209/" target='_blank'>
