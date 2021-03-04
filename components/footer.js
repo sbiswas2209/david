@@ -9,18 +9,18 @@ const Footer = () => {
         </div>
         <div className='lg:grid grid-cols-3 gap-4 sm:grid grid-rows-3 gap-4'>
             <a href="https://www.linkedin.com/in/sbiswas2209/" target='_blank'>
-                <p className='text-blue-700 text-lg'>LinkedIn</p>
+                <p className='text-yellow-400 text-lg'>LinkedIn</p>
             </a>
             <a href="https://www.github.com/sbiswas2209/" target='_blank'>
-                <p className='text-blue-700 text-lg'>Github</p>
+                <p className='text-yellow-400 text-lg'>Github</p>
             </a>
             <a href="https://www.instagram.com/_its_sagnik" target='_blank'>
-                <p className='text-blue-700 text-lg'>Instagram</p>
+                <p className='text-yellow-400 text-lg'>Instagram</p>
             </a>
         </div>
       </div>
       <p className='text-sm text-center pb-4'>
-          Inspired by <a href="https://bchiang7.github.io/" className='text-blue-700'>Brittany Chiang</a>
+          Inspired by <a href="https://bchiang7.github.io/" className='text-yellow-400'>Brittany Chiang</a>
       </p>
     </footer>
   );
