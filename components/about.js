@@ -12,12 +12,12 @@ const About = () => {
     </h2>
     <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
       <div className="inline-flex rounded-md shadow">
-        <a href="mailto:me@sagnikbiswas.tech?Subject=Wanted%20to%20have%20a%20chat" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-blue-800 hover:text-white transition duration-500 hover:-transition">
+        <a href="mailto:me@sagnikbiswas.tech?Subject=Wanted%20to%20have%20a%20chat" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-blue-800 hover:text-white transition duration-500 hover:-transition lg:text-base text-sm text-center">
           Contact me
         </a>
       </div>
       <div className="ml-3 inline-flex rounded-md shadow">
-        <a href="#resume" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md hover:text-yellow-400 hover:border-2 hover:border-yellow-400 transition duration-500 hover:-transition">
+        <a href="#resume" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md hover:text-yellow-400 hover:border-2 hover:border-yellow-400 transition duration-500 hover:-transition lg:text-base text-sm">
           See why i am the perfect choice
         </a>
       </div>
