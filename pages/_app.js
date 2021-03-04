@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Sagnik Biswas</title>
-        <meta name="description" content="Free Web tutorials" />
+        <meta name="description" content="Flutter Developer" />
         <meta name="keywords" content="Sagnik, Biswas, Sagnik Biswas, SRM, SRMKZILLA, Alexa Developers SRM, Flutter, Flutter Dev, Dev, Developer, Golang, Golang developer" />
         <meta name="author" content="Sagnik Biswas" />
       </Head>
