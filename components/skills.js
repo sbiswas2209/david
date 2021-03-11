@@ -20,9 +20,9 @@ const Skills = () => {
         {skills.map((skill) => (
           <div
             key={skill}
-            className="rounded-md transition duration-700 ease-in-out hover:-transition align-middle p-4 lg:border-2 lg:border-yellow-400 hover:bg-yellow-400 focus:outline-none group"
+            className="rounded-md transition duration-700 ease-in-out hover:-transition align-middle p-4 lg:border-2 lg:border-yellow-400 lg:hover:bg-yellow-400 focus:outline-none group"
           >
-            <p className="text-base group-hover:text-gray-900">{skill}</p>
+            <p className="text-base lg:group-hover:text-gray-900">{skill}</p>
           </div>
         ))}
       </div>
