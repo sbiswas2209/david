@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <div className="ml-3 inline-flex rounded-md shadow">
         <a href="#resume" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md hover:text-yellow-400 hover:border-2 hover:border-yellow-400 transition duration-500 hover:-transition lg:text-base text-sm">
-          See why i am the perfect choice
+          See why I am the perfect choice
         </a>
       </div>
     </div>
