@@ -25,11 +25,8 @@ const Projects = () => {
       </div>
       <div className="grid grid-rows-8 gap-4">
         {projects.map((project) => (
-          <a href={project.url} target="_blank">
-            <div
-              key={project.name}
-              className="transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400"
-            >
+          <a href={project.url} target="_blank" key={project.name}>
+            <div className="transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400">
               <h3 className="text-lg group-hover:text-gray-900 text-gray-100">
                 {project.name}
               </h3>
