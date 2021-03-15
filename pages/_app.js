@@ -10,6 +10,16 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Flutter Developer" />
         <meta name="keywords" content="Sagnik, Biswas, Sagnik Biswas, SRM, SRMKZILLA, Alexa Developers SRM, Flutter, Flutter Dev, Dev, Developer, Golang, Golang developer" />
         <meta name="author" content="Sagnik Biswas" />
+        <meta property="og:url" content="https://sensei.alexadevsrm.com" />
+        <meta property="og:title" content="Sagnik Biswas" />
+        <meta
+          property="og:description"
+          content="An undergraduate, building mostly stupid but sometimes interesting projects"
+        />
+        <meta
+          property="og:image"
+          content="https://billboard.srmkzilla.net/api/blog?title=Sagnik&subtitle=Portfolio&theme=dark"
+        />
       </Head>
       <Layout className="bg-grey-800">
         <Component {...pageProps} />
