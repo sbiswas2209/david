@@ -17,7 +17,7 @@ const Roles = () => {
         },
         {
             name: 'IWSCSRM',
-            role: 'Social Media Chair',
+            role: 'Team Lead',
             duration: 'December 2019 - Present'
         },
         {
@@ -27,6 +27,11 @@ const Roles = () => {
         },
         {
             name: 'Campus-Media',
+            role: 'Full Stack Developer',
+            duration: 'January 2021 - February 2021'
+        },
+        {
+            name: 'Dockero Technologies',
             role: 'Full Stack Developer',
             duration: 'January 2021 - February 2021'
         },
@@ -44,9 +49,7 @@ const Roles = () => {
     return ( 
         <div className='lg:grid grid-cols-2 gap-0 ml-11 lg:mr-44 mr-11'>
             <div>
-                <h1 className='text-4xl transition ease-in duration-700 lg:text-center mt-11'>
-                    Roles
-                </h1>
+            <h3 className="text-4xl text-center mt-11 mb-11">Roles</h3>
             </div>
             <div className='grid grid-rows-8 gap-4'>
                {roles.map((role) => (

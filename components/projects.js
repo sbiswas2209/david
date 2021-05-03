@@ -19,9 +19,7 @@ const Projects = () => {
   return (
     <div className="lg:grid grid-cols-2 gap-0 ml-11 lg:mr-44 mr-11 mt-11">
       <div>
-        <h1 className="text-4xl transition ease-in duration-700 lg:text-center mt-11">
-          Projects
-        </h1>
+      <h3 className="text-4xl text-center mt-11 mb-11">Projects</h3>
       </div>
       <div className="grid grid-rows-8 gap-4">
         {projects.map((project) => (
