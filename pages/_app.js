@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Flutter Developer" />
         <meta name="keywords" content="Sagnik, Biswas, Sagnik Biswas, SRM, SRMKZILLA, Alexa Developers SRM, Flutter, Flutter Dev, Dev, Developer, Golang, Golang developer" />
         <meta name="author" content="Sagnik Biswas" />
-        <meta property="og:url" content="https://sensei.alexadevsrm.com" />
+        <meta property="og:url" content="https://sagnikbiswas.tech" />
         <meta property="og:title" content="Sagnik Biswas" />
         <meta
           property="og:description"
