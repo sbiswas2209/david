@@ -3,16 +3,19 @@ const Projects = () => {
     {
       name: "Help Me",
       description: "Help anytime, anywhere",
+      stack: 'Flutter, Node.js, MongoDB, FCM',
       url: "https://github.com/ankithans/help-me",
     },
     {
       name: "Smallen",
       description: "A smaller name for your humongous links",
-      url: "https://smallen.herokuapp.com",
+      stack: 'Next.js, Typescript, TailwindCSS, MongoDB',
+      url: "https://smallen.xyz",
     },
     {
       name: "Inspire Me",
       description: "Feeling down? Let Alexa make your mood better.",
+      stack: 'Alexa Skills Kit',
       url: "https://www.amazon.com/gp/product/B08BS4RNF1?",
     },
   ];
@@ -25,8 +28,11 @@ const Projects = () => {
         {projects.map((project) => (
           <a href={project.url} target="_blank" key={project.name}>
             <div className="transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400">
-              <h3 className="text-lg group-hover:text-gray-900 text-gray-100">
+              <h3 className="text-xl group-hover:text-gray-900 text-gray-100">
                 {project.name}
+              </h3>
+              <h3 className="text-lg group-hover:text-gray-900 text-gray-100">
+                Stack Used : {project.stack}
               </h3>
               <h3 className="text-base group-hover:text-gray-900 text-gray-100">
                 {project.description}
