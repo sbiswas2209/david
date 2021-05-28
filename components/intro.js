@@ -3,7 +3,7 @@ import Wave from "./wave";
 
 const Intro = () => {
   return (
-    <>
+    <div className='h-screen'>
       <Wave />
       <div className="ml-11 lg:mt-66 mt-52 grid grid-rows-3 gap-5">
         <h3 className="text-5xl">Hello!!! 👋</h3>
@@ -25,7 +25,7 @@ const Intro = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
