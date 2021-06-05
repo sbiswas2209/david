@@ -2,18 +2,13 @@ const Roles = () => {
     const roles = [
         {
             name: 'SRMKZILLA',
-            role: 'Technical Associate',
+            role: 'Technical Lead',
             duration: 'October 2020 - Present'
         },
         {
             name: 'Alexa Developers SRM',
-            role: 'Technical Associate',
+            role: 'Team Lead',
             duration: 'March 2020 - Present'
-        },
-        {
-            name: 'Think Digital SRM',
-            role: 'App Developer',
-            duration: 'September 2020 - Present'
         },
         {
             name: 'IWSCSRM',
@@ -21,8 +16,13 @@ const Roles = () => {
             duration: 'December 2019 - Present'
         },
         {
+            name: 'Think Digital SRM',
+            role: 'App Developer',
+            duration: 'September 2020 - Present'
+        },
+        {
             name: 'Tech-Analogy',
-            role: 'App Development Lead',
+            role: 'Web & App Development Lead',
             duration: 'Oct 2020 - Present'
         },
         {
@@ -33,7 +33,7 @@ const Roles = () => {
         {
             name: 'Dockero Technologies',
             role: 'Full Stack Developer',
-            duration: 'January 2021 - February 2021'
+            duration: 'May 2021 - June 2021'
         },
         {
             name: 'Kaloory',

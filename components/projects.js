@@ -40,9 +40,9 @@ const Projects = () => {
             </div>
           </a>
         ))}
-        <p className="text-sm p-5">
+        <a className="text-sm p-5 hover:text-yellow-400" href='https://github.com/sbiswas2209' target='_blank'>
           and many more, check my Github for the latest projects I come up with.
-        </p>
+        </a>
       </div>
     </div>
   );
