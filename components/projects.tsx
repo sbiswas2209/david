@@ -1,24 +1,4 @@
-const Projects = () => {
-  const projects = [
-    {
-      name: "Help Me",
-      description: "Help anytime, anywhere",
-      stack: 'Flutter, Node.js, MongoDB, FCM',
-      url: "https://github.com/ankithans/help-me",
-    },
-    {
-      name: "Smallen",
-      description: "A smaller name for your humongous links",
-      stack: 'Next.js, Typescript, TailwindCSS, MongoDB',
-      url: "https://smallen.xyz",
-    },
-    {
-      name: "Inspire Me",
-      description: "Feeling down? Let Alexa make your mood better.",
-      stack: 'Alexa Skills Kit',
-      url: "https://www.amazon.com/gp/product/B08BS4RNF1?",
-    },
-  ];
+const Projects = ({projects}) => {
   return (
     <div className="lg:grid grid-cols-2 gap-0 ml-11 lg:mr-44 mr-11 mt-11">
       <div>
