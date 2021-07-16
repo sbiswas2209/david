@@ -1,4 +1,3 @@
-import Form from "./form";
 import Wave from "./wave";
 
 const Intro = () => {

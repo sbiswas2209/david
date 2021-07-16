@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
           content="https://billboard.srmkzilla.net/api/blog?title=Sagnik&subtitle=Portfolio&theme=dark"
         />
       </Head>
-      <Layout className="bg-grey-800">
+      <Layout>
         <Component {...pageProps} />
       </Layout>
     </>
