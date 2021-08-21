@@ -1,10 +1,10 @@
 import database from "../common/database";
 export default async function getRoles() {
-    const roles = [];
-    const rolesCursor = await (await database()).collection('roles').find({});
+    const resume = [];
+    const rolesCursor = await (await database()).collection('config').find({});
     await rolesCursor.forEach((role) => {
         delete role['_id'];
-        roles.push(role);
+        resume.push(role);
     });
-    return roles;
+    return resume[0].resume;
 }
