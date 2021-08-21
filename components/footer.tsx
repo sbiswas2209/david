@@ -22,7 +22,8 @@ const Footer = () => {
         </div>
       </div>
       <p className='text-sm text-center pb-4'>
-          Inspired by <a href="https://bchiang7.github.io/" className='text-yellow-400'>Brittany Chiang</a>
+          Inspired by <a href="https://bchiang7.github.io/" target='_blank' className='text-yellow-400'>Brittany Chiang</a><br />
+          Built on the amazing <a href="https://nextjs.org/" target='_blank' className='text-yellow-400'>Next.js</a> and <a href="https://tailwindcss.com/" target='_blank' className='text-yellow-400'>Tailwind CSS</a>
       </p>
     </footer>
   );
