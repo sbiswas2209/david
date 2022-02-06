@@ -20,7 +20,7 @@ const Intro = () => {
             href="mailto:me@sagnikbiswas.tech?Subject=Wanted%20to%20have%20a%20chat"
             className="lg:p-4 col-span-2 text-3xl hover:text-yellow-400 underline hover:no-underline transition duration-500 hover:-transition rounded-md"
           >
-            me@sagnikbiswas.tech
+            me@sagnik.dev
           </a>
         </div>
       </div>
