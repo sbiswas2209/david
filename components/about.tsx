@@ -15,7 +15,7 @@ const About = () => {
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
               <a
-                href="mailto:me@sagnikbiswas.tech?Subject=Wanted%20to%20have%20a%20chat"
+                href="mailto:me@sagnik.dev?Subject=Wanted%20to%20have%20a%20chat"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-blue-800 hover:text-white transition duration-500 hover:-transition lg:text-base text-center"
               >
                 Contact me
