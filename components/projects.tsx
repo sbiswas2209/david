@@ -6,16 +6,15 @@ const Projects = ({projects}) => {
       </div>
       <div className="grid grid-rows-8 gap-4">
         {projects.map((project) => (
-          <a href={project.url} target="_blank" key={project.name}>
+          <a href={project.projectLink} target="_blank" key={project.projectName}>
             <div className="transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400">
               <h3 className="text-xl group-hover:text-gray-900 text-gray-100">
-                {project.name}
+                {project.projectName}
               </h3>
               <h3 className="text-lg group-hover:text-gray-900 text-gray-100">
-                Stack Used : {project.stack}
+                Stack Used : {(project.stack["data"] as string[]).join(", ")}
               </h3>
-              <h3 className="text-base group-hover:text-gray-900 text-gray-100">
-                {project.description}
+              <h3 className="text-base group-hover:text-gray-900 text-gray-100" dangerouslySetInnerHTML={{__html: project.description}}>
               </h3>
             </div>
           </a>
