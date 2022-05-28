@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import Layout from "../components/layout";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,7 +7,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Sagnik Biswas</title>
         <meta name="description" content="Flutter Developer" />
-        <meta name="keywords" content="Sagnik, Biswas, Sagnik Biswas, SRM, SRMKZILLA, Alexa Developers SRM, Flutter, Flutter Dev, Dev, Developer, Golang, Golang developer" />
+        <meta
+          name="keywords"
+          content="Sagnik, Biswas, Sagnik Biswas, SRM, SRMKZILLA, Alexa Developers SRM, Flutter, Flutter Dev, Dev, Developer, Golang, Golang developer"
+        />
         <meta name="author" content="Sagnik Biswas" />
         <meta property="og:url" content="https://sagnikbiswas.tech" />
         <meta property="og:title" content="Sagnik Biswas" />
@@ -21,9 +23,7 @@ function MyApp({ Component, pageProps }) {
           content="https://billboard.srmkzilla.net/api/blog?title=Sagnik&subtitle=Portfolio&theme=dark"
         />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </>
   );
 }

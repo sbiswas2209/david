@@ -6,13 +6,15 @@ const Roles = ({roles}) => {
             </div>
             <div className='grid grid-rows-8 gap-4'>
                {roles.map((role) => (
-                    <div key={role.name} className='transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400'>
+                    <a href={role.companyWebsite ?? role.link} target="__blank" key={role.companyName ?? role.clubName}>
+                        <div  className='transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400'>
                     <h3 className='text-base group-hover:text-gray-900 text-gray-100'>
-                        {role.role}
+                        {role.companyName ?? role.clubName}
                     </h3>
-                    <h3 className='text-lg group-hover:text-gray-900 text-gray-100'>{role.name}</h3>
-                    <p className='text-sm group-hover:text-gray-900 text-gray-100'>{role.duration}</p>
+                    <h3 className='text-lg group-hover:text-gray-900 text-gray-100'>{role.companyRole ?? role.role}</h3>
+                    <p className='text-sm group-hover:text-gray-900 text-gray-100'>{role.startDate.split("-")[0]} - {role.endDate  === null ? "Present" : role.endDate.split("-")[0]}</p>
                 </div>
+                    </a>
                ))}
             </div>
         </div>
