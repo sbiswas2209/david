@@ -1,3 +1,5 @@
+import { DateFormatter } from "../lib/date";
+
 const Roles = ({roles}) => {
     return ( 
         <div className='lg:grid grid-cols-2 gap-0 ml-11 lg:mr-44 mr-11'>
@@ -12,7 +14,7 @@ const Roles = ({roles}) => {
                         {role.companyName ?? role.clubName}
                     </h3>
                     <h3 className='text-lg group-hover:text-gray-900 text-gray-100'>{role.companyRole ?? role.role}</h3>
-                    <p className='text-sm group-hover:text-gray-900 text-gray-100'>{role.startDate.split("-")[0]} - {role.endDate  === null ? "Present" : role.endDate.split("-")[0]}</p>
+                    <p className='text-sm group-hover:text-gray-900 text-gray-100'>{DateFormatter.format(role.startDate)} - {role.endDate  === null ? "Present" : DateFormatter.format(role.endDate)}</p>
                 </div>
                     </a>
                ))}
