@@ -13,7 +13,7 @@ const About = ({email}) => {
             <span className="block text-white">I'm all ears</span>
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-            <div className="inline-flex rounded-md shadow">
+            <div className="inline-flex rounded-md shadow mx-auto">
               <a
                 href={`mailto:${email}?Subject=Wanted%20to%20have%20a%20chat`}
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-blue-800 hover:text-white transition duration-500 hover:-transition lg:text-base text-center"
@@ -24,7 +24,7 @@ const About = ({email}) => {
             <div className="ml-3 inline-flex rounded-md shadow">
               <a
                 href="#resume"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md hover:text-yellow-400 hover:border-2 hover:border-yellow-400 transition duration-500 hover:-transition lg:text-base"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md hover:text-yellow-400 hover:border-2 hover:border-yellow-400 transition duration-500 hover:-transition lg:text-base text-center"
               >
                 See why I am the perfect choice
               </a>
