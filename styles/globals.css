@@ -30,3 +30,13 @@ a {
 * {
     box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #181c28;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #fff000;
+    border-radius: 5px;
+}

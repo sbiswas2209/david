@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 
 export default function Home({email, projects, skills, roles, resume, phone, linkedin, github, instagram, name}) {
   return (
-    <div>
+    <div className="scroll-smooth select-none">
       <Intro email={email} />
       <About email={email} />
       <Roles roles={roles} />
