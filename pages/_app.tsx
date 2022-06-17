@@ -6,26 +6,27 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Sagnik Biswas</title>
-        <meta name="description" content="Flutter Developer" />
+        <meta name="description" content="Software Developer" />
         <meta
           name="keywords"
-          content="Sagnik, Biswas, Sagnik Biswas, SRM, SRMKZILLA, Alexa Developers SRM, Flutter, Flutter Dev, Dev, Developer, Golang, Golang developer"
+          content="Sagnik, Biswas, Sagnik Biswas, SRM, SRMKZILLA, Alexa Developers SRM, Flutter, Flutter Dev, Dev, Developer, Golang, Golang developer, SRM, Tech Analogy, Developmnt, "
         />
         <meta name="author" content="Sagnik Biswas" />
-        <meta property="og:url" content="https://sagnikbiswas.tech" />
+        <meta property="og:url" content="https://sagnik.dev" />
         <meta property="og:title" content="Sagnik Biswas" />
         <meta
           property="og:description"
-          content="An undergraduate, building mostly stupid but sometimes interesting projects"
+          content="If it works, let it be!!!"
         />
         <meta
           property="og:image"
-          content="https://billboard.srmkzilla.net/api/blog?title=Sagnik&subtitle=Portfolio&theme=dark"
+          content="https://www.datocms-assets.com/62601/1655498808-sagnik-biswas-br-software-developer.png"
         />
       </Head>
       <Component {...pageProps} />
     </>
   );
 }
+
 
 export default MyApp;
