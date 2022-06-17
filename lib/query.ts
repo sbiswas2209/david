@@ -43,3 +43,94 @@ export const DATA_QUERY=`query MyQuery {
     }
   }
   `;
+
+  export const BLOG_DATA_QUERY = `query MyQuery {
+    allBlogs {
+      contentData {
+        ... on BlogContentRecord {
+          id
+          content {
+            blocks
+            links
+            value
+          }
+        }
+        ... on BlogImageRecord {
+          id
+          image {
+            mimeType
+            title
+            url
+            height
+            width
+          }
+        }
+        ... on BlogVideoRecord {
+          id
+          video {
+            url
+            mimeType
+            filename
+          }
+        }
+      }
+      _updatedAt
+      createdAt
+      id
+      landingImage {
+        alt
+        title
+        url
+      }
+      publishedOn
+      slug
+      title
+      updatedAt
+    }
+  }
+  `;
+
+  export const BLOG_QUERY_BY_SLUG = (slug) => `{
+    blog(filter: {slug: {eq: "${slug}"}}) {
+      slug
+      title
+      publishedOn
+      landingImage {
+        alt
+        url
+        title
+      }
+      updatedAt
+      contentData {
+        ... on BlogContentRecord {
+          id
+          content {
+            blocks
+            links
+            value
+          }
+        }
+        ... on BlogImageRecord {
+          id
+          image {
+            alt
+            height
+            width
+            title
+            url
+          }
+        }
+        ... on BlogVideoRecord {
+          id
+          createdAt
+          updatedAt
+          video {
+            title
+            url
+            mimeType
+          }
+        }
+      }
+    }
+  }
+  `;
