@@ -1,6 +1,18 @@
-const About = ({email}) => {
+import Cal, { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
+
+const About = ({ email }) => {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {
+        theme: "dark",
+        styles: { branding: { brandColor: "#EAB308" } },
+      });
+    })();
+  }, []);
   return (
-    <div className="lg:ml-44 lg:mr-44 m-11 lg:mb-44">
+    <div className="lg:ml-44 lg:mr-44 m-11 lg:mb-44 lg:mt-44">
       <p className="text-2xl lg:text-center">
         Thirst for knowledge is what drives me, and it is the reason that I like
         to keep learning new concepts. I am a person who can bring new ideas,
@@ -14,19 +26,19 @@ const About = ({email}) => {
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow mx-auto">
-              <a
-                href={`mailto:${email}?Subject=Wanted%20to%20have%20a%20chat`}
+              <button
+                data-cal-link="sagnik/15min"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-blue-800 hover:text-white transition duration-500 hover:-transition lg:text-base text-center"
               >
                 Contact me
-              </a>
+              </button>
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
               <a
-                href="#resume"
+                href={`mailto:${email}?Subject=Wanted%20to%20have%20a%20chat`}
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md hover:text-yellow-400 hover:border-2 hover:border-yellow-400 transition duration-500 hover:-transition lg:text-base text-center"
               >
-                See why I am the perfect choice
+                Old school? You can write a mail to me too!
               </a>
             </div>
           </div>

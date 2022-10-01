@@ -30,6 +30,26 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@calcom/embed-core@^1.1.0":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-core/-/embed-core-1.1.2.tgz#d2145ab03f5d5738646e78734102f6e6308571dd"
+  integrity sha512-zf0tj0fUZzkWAu/f3Ftacbyg+tGhyRIfm1BvKa7I5CpjXO5Skg1Qtga3DrLhzzmsP7uT6NKTJ4BcrwoHIADOoA==
+
+"@calcom/embed-react@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-react/-/embed-react-1.0.9.tgz#84e56ba70d48633f90565a6320dd2cb33de71f84"
+  integrity sha512-ByqZRcGWYNv6e0pSktiJFzWf1z/xUD+7Gs605JubqTYsjvVseXFFDJXjJzr5QrMdEKz1seFMPwKg2AgMzIPPFg==
+  dependencies:
+    "@calcom/embed-core" "^1.1.0"
+    "@calcom/embed-snippet" "^1.0.1"
+
+"@calcom/embed-snippet@^1.0.1":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@calcom/embed-snippet/-/embed-snippet-1.0.4.tgz#732dc4c51091afe31cc726317baeb9379856cea0"
+  integrity sha512-KAYLIqOarPli2YrpUEnk29gzsUO1kYaz5kdIrMuMaHv5AHT8M3oOKzhnktrVudrYJ4VSiamEUrHYw/vko0wtKg==
+  dependencies:
+    "@calcom/embed-core" "^1.1.0"
+
 "@fortawesome/fontawesome-common-types@6.1.1":
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.1.1.tgz#7dc996042d21fc1ae850e3173b5c67b0549f9105"
@@ -320,9 +340,9 @@ camelcase-css@^2.0.1:
   integrity sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==
 
 caniuse-lite@^1.0.30001283, caniuse-lite@^1.0.30001286, caniuse-lite@^1.0.30001297:
-  version "1.0.30001307"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001307.tgz#27a67f13ebc4aa9c977e6b8256a11d5eafb30f27"
-  integrity sha512-+MXEMczJ4FuxJAUp0jvAl6Df0NI/OfW1RWEE61eSmzS7hw6lz4IKutbhbXendwq8BljfFuHtu26VWsg4afQ7Ng==
+  version "1.0.30001414"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001414.tgz"
+  integrity sha512-t55jfSaWjCdocnFdKQoO+d2ct9C59UZg4dY3OnUlSZ447r8pUtIKdp0hpAzrGFultmTC+Us+KpKi4GZl/LXlFg==
 
 chalk@^2.0.0:
   version "2.4.2"
