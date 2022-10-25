@@ -1,16 +1,8 @@
 import Cal, { getCalApi } from "@calcom/embed-react";
+import Link from "next/link";
 import { useEffect } from "react";
 
 const About = ({ email }) => {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi();
-      cal("ui", {
-        theme: "dark",
-        styles: { branding: { brandColor: "#EAB308" } },
-      });
-    })();
-  }, []);
   return (
     <div className="lg:ml-44 lg:mr-44 m-11 lg:mb-44 lg:mt-44">
       <p className="text-2xl lg:text-center">
@@ -26,12 +18,11 @@ const About = ({ email }) => {
           </h2>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow mx-auto">
-              <button
-                data-cal-link="sagnik/15min"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-blue-800 hover:text-white transition duration-500 hover:-transition lg:text-base text-center"
-              >
-                Contact me
-              </button>
+              <Link href="/contact">
+                <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-blue-800 hover:text-white transition duration-500 hover:-transition lg:text-base text-center">
+                  Contact me
+                </button>
+              </Link>
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
               <a
