@@ -1,4 +1,4 @@
-export const DATA_QUERY=`query MyQuery {
+export const DATA_QUERY = `query MyQuery {
     allClubRoles {
       clubName
       startDate
@@ -44,7 +44,7 @@ export const DATA_QUERY=`query MyQuery {
   }
   `;
 
-  export const BLOG_DATA_QUERY = `query MyQuery {
+export const BLOG_DATA_QUERY = `query MyQuery {
     allBlogs {
       contentData {
         ... on BlogContentRecord {
@@ -90,7 +90,7 @@ export const DATA_QUERY=`query MyQuery {
   }
   `;
 
-  export const BLOG_QUERY_BY_SLUG = (slug) => `{
+export const BLOG_QUERY_BY_SLUG = (slug) => `{
     blog(filter: {slug: {eq: "${slug}"}}) {
       slug
       title
@@ -131,6 +131,16 @@ export const DATA_QUERY=`query MyQuery {
           }
         }
       }
+    }
+  }
+  `;
+
+export const CONTACT_DATA_QUERY = `query ContactSlugsQuery {
+    allContacts {
+      title
+      slug
+      description(markdown: false)
+      createdAt
     }
   }
   `;
