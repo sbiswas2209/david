@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { request } from "../../lib/datocms";
-import { BLOG_DATA_QUERY, BLOG_QUERY_BY_SLUG, DATA_QUERY } from "../../lib/query";
+import {
+  BLOG_DATA_QUERY,
+  BLOG_QUERY_BY_SLUG,
+  DATA_QUERY,
+} from "../../lib/query";
 import { StructuredText, renderNodeRule } from "react-datocms";
 import { isCode, isLink } from "datocms-structured-text-utils";
 import Footer from "../../components/footer";
@@ -20,18 +24,26 @@ function BlogPage({ data }) {
         <meta name="author" content="Sagnik Biswas" />
         <meta property="og:url" content="https://sagnik.dev" />
         <meta property="og:title" content={data.title} />
-        <meta
-          property="og:description"
-          content="Blogs by Sagnik Biswas"
-        />
+        <meta property="og:description" content="Blogs by Sagnik Biswas" />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/**${encodeURI(data.title)}**%20%3Cbr%2F%3E%20Blogs%20by%20Sagnik%20Biswas.png?theme=dark&md=1&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg`}
+          content={`https://og-image.vercel.app/**${encodeURI(
+            data.title
+          )}**%20%3Cbr%2F%3E%20Blogs%20by%20Sagnik%20Biswas.png?theme=dark&md=1&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg`}
         />
       </Head>
       <div>
-      {data.landingImage !== null ?  <img src={data.landingImage.url} className="object-cover h-96 w-screen pb-10"/> : <div></div>}
-        <h1 className="lg:text-5xl text-3xl font-bold lg:px-96 px-14 flex flex-auto">{data.title}</h1>
+        {data.landingImage !== null ? (
+          <img
+            src={data.landingImage.url}
+            className="object-cover h-96 w-screen pb-10"
+          />
+        ) : (
+          <div></div>
+        )}
+        <h1 className="lg:text-5xl text-3xl font-bold lg:px-96 px-14 flex flex-auto">
+          {data.title}
+        </h1>
         {data.contentData.map((e) => (
           <div
             key={data.contentData.indexOf(e)}
@@ -49,7 +61,10 @@ function BlogPage({ data }) {
                       return (
                         <a href={node.url} target="__blank" key={key}>
                           {node.children.map((e) => (
-                            <span className="underline hover:text-yellow-400 hover:no-underline lg:text-white sm:text-white duration-500" key={node.children.indexOf(e)}>
+                            <span
+                              className="underline hover:text-yellow-400 hover:no-underline lg:text-white sm:text-white duration-500"
+                              key={node.children.indexOf(e)}
+                            >
                               {e.value}
                             </span>
                           ))}
@@ -73,7 +88,13 @@ function BlogPage({ data }) {
           </div>
         ))}
       </div>
-      <Footer phone={data.phone} linkedin={data.linkedin} github={data.github} instagram={data.instagram} name={data.name}/>
+      <Footer
+        phone={data.phone}
+        linkedin={data.linkedin}
+        github={data.github}
+        instagram={data.instagram}
+        name={data.name}
+      />
     </>
   );
 }
@@ -108,7 +129,11 @@ export const getStaticProps = async ({ params: { slug } }) => {
     slug: data["blog"].slug,
     contentData: data["blog"].contentData,
     landingImage: data["blog"].landingImage ?? null,
-    phone, linkedin, github, instagram, name
+    phone,
+    linkedin,
+    github,
+    instagram,
+    name,
   };
   return {
     props: {
