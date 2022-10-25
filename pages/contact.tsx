@@ -24,8 +24,6 @@ const ContactPage = ({ contact }) => {
     })();
   }, []);
 
-  console.log(contact.map((e) => e.slug));
-
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
       <div className="rotate-0 lg:rotate-90 flex-1">
