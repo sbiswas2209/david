@@ -37,18 +37,16 @@ const ContactPage = ({ contact }) => {
           <div
             key={index}
             data-cal-link={`sagnik/${e.slug}`}
-            className="text-left transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400"
+            className="my-5 lg:border-2 border-yellow-400 lg:h-28 cursor-pointer text-left transition duration-500 hover:-transition container rounded-md p-5 hover:bg-yellow-400 group bg-transparent group-hover:border-5 group-hover:border-yellow-400"
           >
-            <div>
-              <h3 className="text-xl group-hover:text-gray-900 text-gray-100">
-                {e.title}
-              </h3>
+            <h3 className="text-xl group-hover:text-gray-900 text-gray-100">
+              {e.title}
+            </h3>
 
-              <h3
-                className="text-base group-hover:text-gray-900 text-gray-100"
-                dangerouslySetInnerHTML={{ __html: e.description }}
-              ></h3>
-            </div>
+            <h3
+              className="text-base group-hover:text-gray-900 text-gray-100"
+              dangerouslySetInnerHTML={{ __html: e.description }}
+            ></h3>
           </div>
         ))}
       </div>
